@@ -1,10 +1,10 @@
 #include<iterator> // for std::begin and std::end
 #include<iostream>
 
-template<typename T>
-T* find(T* ptr,T* ptr1,T x)
+
+auto* find(auto* ptr,auto* ptr1,auto x)
 {
-	for (T* num{ ptr }; (num != ptr1); ++num)
+	for (auto* num{ ptr }; (num != ptr1); ++num)
 	{
 		if (( * num) == x)
 		{
