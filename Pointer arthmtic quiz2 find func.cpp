@@ -1,9 +1,10 @@
 #include<iterator> // for std::begin and std::end
 #include<iostream>
 
-int* find(int* ptr,int* ptr1,int x)
+template<typename T>
+T* find(T* ptr,T* ptr1,T x)
 {
-	for (int* num{ ptr }; (num != ptr1); ++num)
+	for (T* num{ ptr }; (num != ptr1); ++num)
 	{
 		if (( * num) == x)
 		{
