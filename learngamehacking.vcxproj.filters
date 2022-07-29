@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Pointer arthmtic quiz2 find func.cpp">
+    <ClCompile Include="CryptoHack ascii print array.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
