@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Dynamic String array sortquiz with SortSwap func from algorithm header.cpp" />
+    <ClCompile Include="Dynamic String array sortquiz without SortSwap func from algorithm header.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
