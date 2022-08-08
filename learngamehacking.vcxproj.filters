@@ -15,6 +15,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="Dynamic String array sortquiz without SortSwap func from algorithm header.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

@@ -65,6 +65,8 @@ int main()
 
 		printSortedNames(arrNames,length);
 
+		delete[] arrNames; // deleting a dynamically allocated array before program fimish to free memory used
+
 		return 0;
 
 
