@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Parse nice int from char codewars problem.cpp">
+    <ClCompile Include="Dynamic String array sort quiz.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
