@@ -12,16 +12,10 @@ void printToConsole(int varInt,std::string* ptr2string,char* arrChar,int* ptr2in
 	std::cout << "ptr2int " << '\t' << "(0x" << ptr2ptr << ')' << " = " << ptr2int << '\n';
 	std::cout << "ptr2ptr " << '\t' << "(0x" << ptr2ptr2 << ')' << " = " << ptr2ptr << '\n';
 	std::cout << "ptr2ptr2 " << '\t' << "(0x" << &ptr2ptr2 << ')' << " = " << ptr2ptr2 << '\n'<<'\n';
-
-	std::cout << "Press enter to print again " << '\n'<<'\n'<<'\n';
-
-	std::cout << "--------------------------------------------------------------------" << '\n';
-
+    
+	std::cout << "Press enter to print again " << '\n'<<'\n';
 	
 }
-
-
-
 
 
 int main()
@@ -34,8 +28,14 @@ int main()
 	int** ptr2ptr { &ptr2int };
 	int*** ptr2ptr2 { &ptr2ptr };
 
-	//while (true)
+	while(true)
+	{
+		
 		printToConsole(varInt, ptr2string, arrChar, ptr2int, ptr2ptr, ptr2ptr2);
+        std::cin.get();
+        std::cout << "--------------------------------------------------------------------\n" << '\n';
+	} 
 
+	
 	return 0;
 }
