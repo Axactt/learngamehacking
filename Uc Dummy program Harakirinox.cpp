@@ -7,11 +7,11 @@ void printToConsole(int varInt,std::string* ptr2string,char* arrChar,int* ptr2in
 	std::cout << " Process Id: " << GetCurrentProcessId() << '\n' << '\n';
 
 	std::cout << "varInt  " << '\t' << "(0x" << ptr2int << ')' << " = " << varInt << '\n';
-	std::cout << "varString " << '\t' << "(0x" << ptr2string << ')' << " = " << *ptr2string << '\n';
-	std::cout << "arrChar[128] " << '\t' << "(0x" << static_cast<void*>(arrChar) << ')' << " = " << arrChar << '\n';
-	std::cout << "ptr2int " << '\t' << "(0x" << ptr2ptr << ')' << " = " << ptr2int << '\n';
-	std::cout << "ptr2ptr " << '\t' << "(0x" << ptr2ptr2 << ')' << " = " << ptr2ptr << '\n';
-	std::cout << "ptr2ptr2 " << '\t' << "(0x" << &ptr2ptr2 << ')' << " = " << ptr2ptr2 << '\n'<<'\n';
+	std::cout << "varString " << '\t' << "(0x" << ptr2string << ')' << " = " <<std::hex<< *ptr2string << '\n';
+	std::cout << "arrChar[128] " << '\t' << "(0x" << static_cast<void*>(arrChar) << ')' << " = " << std::hex << arrChar << '\n';
+	std::cout << "ptr2int " << '\t' << "(0x" << ptr2ptr << ')' << " = " << std::hex << ptr2int << '\n';
+	std::cout << "ptr2ptr " << '\t' << "(0x" << ptr2ptr2 << ')' << " = " << std::hex << ptr2ptr << '\n';
+	std::cout << "ptr2ptr2 " << '\t' << "(0x" << &ptr2ptr2 << ')' << " = " << std::hex << ptr2ptr2 << '\n'<<'\n';
     
 	std::cout << "Press enter to print again " << '\n'<<'\n';
 	
@@ -32,7 +32,7 @@ int main()
 	{
 		
 		printToConsole(varInt, ptr2string, arrChar, ptr2int, ptr2ptr, ptr2ptr2);
-        std::cin.get();
+		std::cin.get(); // to enter a pause 
         std::cout << "--------------------------------------------------------------------\n" << '\n';
 	} 
 

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="UnknownCheatsMe Harakirinox.cpp">
+    <ClCompile Include="Uc Dummy program Harakirinox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
