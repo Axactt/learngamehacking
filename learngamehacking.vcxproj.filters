@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Uc Dummy program Harakirinox.cpp">
+    <ClCompile Include="..\UcExternalTrainerForDummy\Uc Extrernal ReadPMemory for Dummy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
