@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Dummy program UC For practise.cpp">
+    <ClCompile Include="External trainer  UC WriteProcessMemory .cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
