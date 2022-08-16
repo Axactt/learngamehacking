@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="External trainer  UC WriteProcessMemory .cpp" />
+    <ClCompile Include="readpointerPathFunction.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -97,7 +97,7 @@
       <SupportJustMyCode>false</SupportJustMyCode>
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
-      <TreatWarningAsError>true</TreatWarningAsError>
+      <TreatWarningAsError>false</TreatWarningAsError>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -138,7 +138,7 @@
       <SupportJustMyCode>false</SupportJustMyCode>
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
-      <TreatWarningAsError>true</TreatWarningAsError>
+      <TreatWarningAsError>false</TreatWarningAsError>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
