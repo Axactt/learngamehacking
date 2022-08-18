@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="array of struct example.cpp">
+    <ClCompile Include="array of struct list initialization.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

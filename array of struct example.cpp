@@ -13,9 +13,18 @@ int main()
     // array type is struct, so each element of array "houses" is a struct of types Houses
     std::array<Houses, 3>houses{};
 
-    houses[0] = { 13,4,30 }; // assigning value to first houses array element, which is a struct, so a list initialization
-    houses[1] = { 14,3,10 }; // assigning value to 2nd "houses" array element which is a struct, so a list initialisation
-    houses[2] = { 15,3,40 }; // assigning value to third "houses" attau element which is a struct, so a list initialization
+    houses[0] = { 13, 4, 30 };
+    houses[1] = { 14, 3, 10 };
+    houses[2] = { 15, 3, 40 };
+
+
+
+    /* doesn't work with list initialization
+    std::array<Houses, 3> houses{
+    { 13, 4, 30 },
+    { 14, 3, 10 },
+    { 15, 3, 40 }
+    };   */
 
     // To access individual characteristics  value use member selection operator to each houses array element 
 
