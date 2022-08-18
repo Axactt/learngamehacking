@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="readpointerPathFunction.cpp">
+    <ClCompile Include="array of struct example.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
