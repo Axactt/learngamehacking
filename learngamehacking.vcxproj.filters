@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="algorithm std findif.cpp">
+    <ClCompile Include="std sort with comparison.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
