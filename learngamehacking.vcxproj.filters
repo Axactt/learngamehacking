@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="vector introduction.cpp">
+    <ClCompile Include="diff iteartion through arrays .cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
