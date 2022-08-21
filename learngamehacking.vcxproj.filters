@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Sorting arrays of struct.cpp">
+    <ClCompile Include="cstyle string print character.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
