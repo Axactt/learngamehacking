@@ -10,9 +10,9 @@ struct Students
     int grade{};
 };
 
-bool greater(Students& a, Students& b) // custom greater function with arguments type of struct Students to sort in descending order
+bool greater(const Students& a, const Students& b) // custom greater function with arguments type of struct Students to sort in descending order
 {
-    return(a.grade > b.grade);
+    return(a.grade > b.grade); // arguments of greater func passed by ref as struct and comparison done on members
 }
 
 std::vector<Students>& inputStudentsList(std::vector<Students>& arr) // pass by refernece and return by refernce to avoid making copies
@@ -47,7 +47,7 @@ int main()
 
     inputStudentsList(student);
 
-   std::sort( &student[0], (&student[0] + count), greater); // custom greater function to sort as per grades of students
+   std::sort( student.begin(), student.end(), greater); // custom greater function to sort as per grades of students
 
 
     for (auto& i : student)
