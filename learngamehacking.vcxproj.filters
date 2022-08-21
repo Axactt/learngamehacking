@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="std sort with comparison.cpp">
+    <ClCompile Include="for_each algorihm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
