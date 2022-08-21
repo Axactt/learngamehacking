@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="for_each algorihm.cpp">
+    <ClCompile Include="reduce accumalte shuffle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
