@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="cstyle string print character.cpp">
+    <ClCompile Include="qz11.6 DeckOfCards array.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
