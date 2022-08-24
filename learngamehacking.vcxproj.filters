@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="qz11.6 DeckOfCards array.cpp">
+    <ClCompile Include="function pointer syntaxes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

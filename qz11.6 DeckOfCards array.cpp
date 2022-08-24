@@ -297,7 +297,7 @@ int main()
 
 	std::cout << '\n'<<'\n';
 
-	CardType card { five,hearts };
+	CardType card {three,clubs };
 	std::cout << getCardValue( card )<<'\n';
 	
 
