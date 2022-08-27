@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="typeAlias typReferrnce funcPtr.cpp">
+    <ClCompile Include="quiz12.1 functPtr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
