@@ -115,7 +115,7 @@ int main()
 	// This extra initialization is done to directly call any of these underlying  functions using this function pointer desireOperation
 	// the call syntax with implicit dereference looks exactly like call to normal function
 	
-	std::cout<<desiredOperation( x, y );
+	std::cout<<" ANSWER: "<<desiredOperation(x, y);
   
 	return 0;
 }

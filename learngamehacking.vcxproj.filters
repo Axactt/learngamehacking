@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="quiz12.1 functPtr.cpp">
+    <ClCompile Include="vector capacity and stack operation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
