@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="recursionFibonacci.cpp">
+    <ClCompile Include="recursion Factorial.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
