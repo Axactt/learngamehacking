@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="recursion Factorial.cpp">
+    <ClCompile Include="cmdLine argument integer input.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
