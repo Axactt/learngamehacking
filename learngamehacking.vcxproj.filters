@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="cmdLine argument integer input.cpp">
+    <ClCompile Include="Ellipsis implementation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
