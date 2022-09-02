@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Ellipsis implementation.cpp">
+    <ClCompile Include="external trainer wip.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
