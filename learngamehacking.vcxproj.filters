@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="recursive function digit sum.cpp">
+    <ClCompile Include="Lambda function signatures syntax.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

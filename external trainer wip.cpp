@@ -44,27 +44,35 @@ uintptr_t FindDMAAddy( HANDLE hProc, uintptr_t ptr, std::vector<unsigned int> of
 
 int main()
 {
-	DWORD procId;
+	
 
-	HWND handle = FindWindow( NULL, (L"DOOM 3: BFG Edition") );
+	HWND handle = FindWindowEx( NULL, L"DOOM 3: BFG Edition" );
 	if (!handle)
 	{
-		std::cerr << "error finding window";
+		std::cout << " Finding window failed. GetLastError = " << std::dec << GetLastError() << '\n';
 		return 0;
 	}
 
 
-	// procId = 15440 ;// GetWindowThreadProcessId( handle, &procId ); // needs to be corrected
+	// procId = 19844 ;// GetWindowThreadProcessId( handle, &procId ); // needs to be corrected
 
-	std::cout << " process Id: " << GetWindowThreadProcessId( handle, &procId ); //procId;  
+	DWORD procId = GetProcessId( handle );
+
+	if (!procId)
+	{
+		std::cout << " Finding procId failed. GetLastError = " << std::dec << GetLastError() << '\n';
+		return 0;
+	}
+
+	std::cout << " process Id: " << procId; //procId;  19844
 	
 
-	uintptr_t modebase =   GetModuleBaseAddress(15440, (wchar_t*) (  "Doom3BFG.exe")); // equals to 0x59aeb7b4
+	uintptr_t modebase =   GetModuleBaseAddress(19844, ( L"Doom3BFG.exe")); // equals to 5961a744
 
 	std::cout << " Modebase: " << modebase << '\n';
 
 	
-	HANDLE hProcess = OpenProcess( PROCESS_ALL_ACCESS, FALSE, procId );
+	HANDLE hProcess = OpenProcess( PROCESS_ALL_ACCESS, FALSE, 19844 );
 
 
 	std::vector<unsigned int> offsets { 0xd44 };
@@ -72,15 +80,15 @@ int main()
 	
 	// hProc parameters receives "HWND handle" and not " hProcess HANDLE"-- this was mistake
 
-	uintptr_t ammoAddr = FindDMAAddy( handle, 0x59aeb7b4, {0XD44 } ); // GetModuleBaseAddress still has to be corrected so putting direct value for base address(0x59aeb7b4)
+	uintptr_t ammoAddr = FindDMAAddy( hProcess, 0x5961a744, {0xd44 } ); // GetModuleBaseAddress still has to be corrected so putting direct value for base address(0x59aeb7b4)
 	
 
 	std::cout << " the player current dynamic address is: " << ammoAddr;
 	
 
-	DWORD newa = 99999 ;
+	DWORD newa = 1337 ;
 
-	WriteProcessMemory( hProcess, (LPVOID) ammoAddr, &newa, sizeof( newa ), 0 );
+	WriteProcessMemory( hProcess, (LPVOID) 0x5961B488, &newa, sizeof( newa ), 0 );
 
 
 	return 0;
