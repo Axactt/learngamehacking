@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Lambda function signatures syntax.cpp" />
+    <ClCompile Include="..\UcExternalTrainerForDummy\Uc Extrernal ReadPMemory for Dummy.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
