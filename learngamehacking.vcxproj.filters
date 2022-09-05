@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\UcExternalTrainerForDummy\Uc Extrernal ReadPMemory for Dummy.cpp">
+    <ClCompile Include="readWritePointerPathFunction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
