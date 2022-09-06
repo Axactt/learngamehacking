@@ -1,7 +1,50 @@
 #include<iostream>
+#include<string>
+#include<stdlib.h>
 #include<vector>
 #include<Windows.h>
+#include<TlHelp32.h> // For CreateToolhelp32Snapshot function
 
+// find process id by process name
+
+DWORD findMyProc( const auto& procName )
+{
+	HANDLE hSnapShot{};
+	PROCESSENTRY32 pe{}; //processentry32 struct describes an entry from a list of the process residing in the system address space when a snapshot was taken
+	DWORD pid {};
+	BOOL hResult{};
+
+	// snapshot of all processes in system
+	hSnapShot = CreateToolhelp32Snapshot( TH32CS_SNAPPROCESS,0 );
+
+	if (hSnapShot == INVALID_HANDLE_VALUE)
+	{
+		std::cout << "process snapshot failed. GetLastError: " << std::dec << GetLastError();
+		system( "pause" );
+		return EXIT_FAILURE;
+	}
+// initializing size of PROCESSENTRY32 struct of type DWORD dwSize
+	pe.dwSize = sizeof( PROCESSENTRY32 );
+
+	// info about first process encountered in a system snapshot
+	hResult = Process32First( hSnapShot, &pe );
+	// retrieve information about processes
+	// and exit if unsuccessful
+
+	while (hResult)
+	{
+		if (wcscmp( procName, pe.szExeFile ) == 0) // using wcscmp func(from std lib) instead of strcmp for use with wchar unicode system
+		{
+			pid = pe.th32ProcessID;
+			break;
+		}
+		hResult = Process32Next( hSnapShot, &pe );
+	}
+
+	// closes an Open handle( CreateToolhelp32SnapShot)
+	CloseHandle( hSnapShot );
+	return pid;
+}
 
 uintptr_t findPointerPath(HANDLE hProcess,  uintptr_t baseaddress, const std::vector<uintptr_t>& offsetVector)
 {
@@ -24,20 +67,20 @@ uintptr_t findPointerPath(HANDLE hProcess,  uintptr_t baseaddress, const std::ve
 
 int main()
 {
-	
 	std::vector<uintptr_t>offsetVector { 0xD44 }; // vector array of offsets for pointer to desired modifiable value
-	
 	uintptr_t fixedOffset { 0x009126e4 }; // fixed offset of entity from module base address
 
 	// section of code to be modified to get modeule Base address automatically
 	uintptr_t moduleBaseAddres { 0x00400000 };
-	
 	uintptr_t baseAddress = moduleBaseAddres + fixedOffset;
+
+	// Getting process id automatically
+	DWORD procId {};
+	procId = findMyProc( L"Doom3BFG.exe" );
 	
 	// section of code to be modified to get process id automatically
-	std::cout << " Please enter process id: ";
-	DWORD procId {};
-	std::cin >> procId;
+	std::cout << "  Process Id found by findMyProc function: "<<procId;
+
 
 	HANDLE hProcess = OpenProcess( PROCESS_ALL_ACCESS, FALSE, procId );
 	
@@ -48,6 +91,7 @@ int main()
 		return EXIT_FAILURE;
 	}
 
+	
 	uintptr_t ammoAddress = findPointerPath( hProcess, baseAddress, offsetVector );
 
 	std::cout  << " ammo address is: " <<std::hex<<ammoAddress << '\n';
