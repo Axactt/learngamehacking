@@ -1,13 +1,12 @@
 #include<iostream>
-#include<string>
-#include<stdlib.h>
+#include<cstring> // for strcmp function
 #include<vector>
 #include<Windows.h>
 #include<TlHelp32.h> // For CreateToolhelp32Snapshot function
 
 // find process id by process name
 
-DWORD findMyProc( const auto& procName )
+DWORD findMyProc( const char* procName )
 {
 	HANDLE hSnapShot{};
 	PROCESSENTRY32 pe{}; //processentry32 struct describes an entry from a list of the process residing in the system address space when a snapshot was taken
@@ -33,7 +32,7 @@ DWORD findMyProc( const auto& procName )
 
 	while (hResult)
 	{
-		if (wcscmp( procName, pe.szExeFile ) == 0) // using wcscmp func(from std lib) instead of strcmp for use with wchar unicode system
+		if (strcmp( procName, pe.szExeFile ) == 0) 
 		{
 			pid = pe.th32ProcessID;
 			break;
@@ -44,6 +43,52 @@ DWORD findMyProc( const auto& procName )
 	// closes an Open handle( CreateToolhelp32SnapShot)
 	CloseHandle( hSnapShot );
 	return pid;
+}
+
+// Finding module address by module/process id
+uintptr_t findMyModuleAddress( DWORD procId )
+{
+	HANDLE hSnapShot {}; // initialization of snapshot handle frm CreateToolHelp32SnapShot function
+	MODULEENTRY32 me {}; // initialization of MODULEENTRY32 struct
+	uintptr_t moduleBaseAddress {}; // initialization of moduleBaseaddress to be found 
+	BOOL hResult {}; // return value from MODULEENTRY32FIRST or MODULEENTRY32NEXT function in BOOL
+
+	// SnapShot of  modules tied with the relevant procID
+	hSnapShot= CreateToolhelp32Snapshot( TH32CS_SNAPMODULE | TH32CS_SNAPMODULE32, procId );
+
+	if (hSnapShot == INVALID_HANDLE_VALUE)
+	{
+		std::cout << "Module snapshot failed. GetLastError: " << std::dec << GetLastError();
+		system( "pause" );
+		return EXIT_FAILURE;
+	}
+
+	// initiallizing size of MODULEENTRY32 struct of type (DWORD) dwSize before using MODULE32FIRST and MODULE32NEXT function
+	//It is The size of the structure, in bytes. Before calling the Module32First function, set this member to 
+	//sizeof(MODULEENTRY32). If you do not initialize dwSize, Module32First fails.
+
+	me.dwSize = sizeof( MODULEENTRY32 );
+
+	// info about first module encountered in a system snapshot
+	hResult = Module32First( hSnapShot, &me );
+
+	// retrieve information about the  modules
+	// and exit if unsuccessful
+	while (hResult)
+	{
+		// if we find the module: return module Base address from "me"struct member - *modBaseAddr which is of type BYTE*
+		if (procId == me.th32ProcessID)
+		{ 
+			// me.modBaseAddr of type BYTE* c-style cast to uintptr_t
+			moduleBaseAddress = (uintptr_t) (me.modBaseAddr); 
+			break;
+		}
+		else
+		hResult = Module32Next( hSnapShot, &me ); // search for next module in snapshot in me structure
+
+	}
+	
+	return moduleBaseAddress;
 }
 
 uintptr_t findPointerPath(HANDLE hProcess,  uintptr_t baseaddress, const std::vector<uintptr_t>& offsetVector)
@@ -70,16 +115,18 @@ int main()
 	std::vector<uintptr_t>offsetVector { 0xD44 }; // vector array of offsets for pointer to desired modifiable value
 	uintptr_t fixedOffset { 0x009126e4 }; // fixed offset of entity from module base address
 
-	// section of code to be modified to get modeule Base address automatically
-	uintptr_t moduleBaseAddres { 0x00400000 };
-	uintptr_t baseAddress = moduleBaseAddres + fixedOffset;
-
+	
 	// Getting process id automatically
 	DWORD procId {};
-	procId = findMyProc( L"Doom3BFG.exe" );
-	
-	// section of code to be modified to get process id automatically
+	procId = findMyProc( "Doom3BFG.exe" );
 	std::cout << "  Process Id found by findMyProc function: "<<procId;
+
+	// section of code to be modified to get modeule Base address automatically
+	
+	
+	
+	uintptr_t moduleBaseAddres = findMyModuleAddress(  procId );
+	uintptr_t baseAddress = moduleBaseAddres + fixedOffset;
 
 
 	HANDLE hProcess = OpenProcess( PROCESS_ALL_ACCESS, FALSE, procId );
