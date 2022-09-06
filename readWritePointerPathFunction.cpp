@@ -3,6 +3,11 @@
 #include<vector>
 #include<Windows.h>
 #include<TlHelp32.h> // For CreateToolhelp32Snapshot function
+   
+
+// currently console trainer works only as 32 bit application
+// needs to sort out
+
 
 // find process id by process name
 
@@ -46,7 +51,7 @@ DWORD findMyProc( const char* procName )
 }
 
 // Finding module address by module/process id
-uintptr_t findMyModuleAddress( DWORD procId )
+uintptr_t findMyModuleAddress( DWORD procId,const char* procName)
 {
 	HANDLE hSnapShot {}; // initialization of snapshot handle frm CreateToolHelp32SnapShot function
 	MODULEENTRY32 me {}; // initialization of MODULEENTRY32 struct
@@ -77,7 +82,7 @@ uintptr_t findMyModuleAddress( DWORD procId )
 	while (hResult)
 	{
 		// if we find the module: return module Base address from "me"struct member - *modBaseAddr which is of type BYTE*
-		if (procId == me.th32ProcessID)
+		if (strcmp(procName,me.szModule)==0)
 		{ 
 			// me.modBaseAddr of type BYTE* c-style cast to uintptr_t
 			moduleBaseAddress = (uintptr_t) (me.modBaseAddr); 
@@ -125,7 +130,7 @@ int main()
 	
 	
 	
-	uintptr_t moduleBaseAddres = findMyModuleAddress(  procId );
+	uintptr_t moduleBaseAddres = findMyModuleAddress(  procId, "Doom3BFG.exe" );
 	uintptr_t baseAddress = moduleBaseAddres + fixedOffset;
 
 
