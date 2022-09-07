@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Sortarray of struct using predicate function .cpp">
+    <ClCompile Include="lambda predicate function STL algorithm maxelement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
