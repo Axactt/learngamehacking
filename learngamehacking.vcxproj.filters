@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="lambda predicate function STL algorithm maxelement.cpp">
+    <ClCompile Include="Lambda predicate function std sort.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
