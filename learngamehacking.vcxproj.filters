@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="readWritePointerPathFunction.cpp">
+    <ClCompile Include="Sortarray of struct using predicate function .cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
