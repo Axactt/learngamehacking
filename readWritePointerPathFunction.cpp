@@ -117,8 +117,8 @@ uintptr_t findPointerPath(HANDLE hProcess,  uintptr_t baseaddress, const std::ve
 
 int main()
 {
-	std::vector<uintptr_t>offsetVector { 0xD44 }; // vector array of offsets for pointer to desired modifiable value
-	uintptr_t fixedOffset { 0x009126e4 }; // fixed offset of entity from module base address
+	std::vector<uintptr_t>offsetVector { 0x14,0x2c,0x17fc }; // vector array of offsets for pointer to desired modifiable value
+	uintptr_t fixedOffset { 0x009126e0 }; // fixed offset of entity from module base address
 
 	
 	// Getting process id automatically

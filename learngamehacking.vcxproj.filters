@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Lambda predicate function std sort.cpp">
+    <ClCompile Include="Lambda Captures12.8.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
