@@ -1,6 +1,7 @@
 #include<iostream>
 #include<random> // std::mt19337 and std::random_device
 #include<vector>
+#include<functional>
 
 namespace Random // called by Random::get(2,4)
 {
@@ -12,6 +13,8 @@ namespace Random // called by Random::get(2,4)
 		return die(mt);
 	}
 }
+
+
 
 int main()
 {
@@ -29,7 +32,7 @@ int main()
 
 	// generation of vector list to play with
 
-	for (std::size_t i {0}; i<listCount; ++i)
+	for (int i {0}; i<listCount; ++i)
 	{
 		auto playNum  {[=]() mutable
 						{
@@ -43,9 +46,46 @@ int main()
 	for (const auto& elem:vecky)
 		std::cout<<elem<<'\n';
 
-	std::cout<<" guess number in list: ";
-	int guess {};
-	std::cin>>guess;
+	
+	
 
+	while (true)
+	{
+		std::cout<<" guess the number in list";
+		int guess {};
+		std::cin>>guess;
+		auto found {std::find(vecky.begin(),vecky.end(),guess)};
+	
+
+		if (found!=vecky.end())
+		{
+			vecky.erase(found); // std::vector.erase() to delete element from vector at irterator found
+			
+			if (std::size(vecky)>=1)
+			{
+				std::cout<<" Nice! "<<std::size(vecky)<<" numbers are left. ";
+				continue;
+			}
+			else
+				break;
+		}
+		else
+		{
+			auto closest {std::min_element(vecky.begin(),vecky.end(),[](int a,int b)
+										   {
+											   return a<b;
+										   })};
+
+			if ((*closest-guess)>4)
+				std::cout<<guess<<"is wrong\n";
+			break;
+		}
+		
+
+	}
+	
+	
+
+	
 	return 0;
 }
