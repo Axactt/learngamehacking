@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Dangling captured Lambda reference.cpp">
+    <ClCompile Include="quiz12.8 lambda captureswip.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
