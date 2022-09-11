@@ -2,6 +2,7 @@
 #include<random> // std::mt19337 and std::random_device
 #include<vector>
 #include<functional>
+#include<cmath>
 
 namespace Random // called by Random::get(2,4)
 {
@@ -13,8 +14,15 @@ namespace Random // called by Random::get(2,4)
 		return die(mt);
 	}
 }
+// Custom predicate function passed as an argument to stl algorithm std::min-element
+// Predicate function is passsed as a function pointer of form &compare
+// Note parameters of conpare should strictly be type of elements of container on which stl algorithm is used
+bool compare(int lhs,int rhs) 
+{
+	if (lhs!=rhs)
+		return (lhs<rhs);
 
-
+}
 
 int main()
 {
@@ -27,11 +35,11 @@ int main()
 
 	// intialize a list of square numbers
 	std::vector<int> vecky(listCount);
+	
 	//Get random number between 2 and 4
 	int rngNum {Random::get(2,4)};
 
 	// generation of vector list to play with
-
 	for (int i {0}; i<listCount; ++i)
 	{
 		auto playNum  {[=]() mutable
@@ -46,46 +54,36 @@ int main()
 	for (const auto& elem:vecky)
 		std::cout<<elem<<'\n';
 
-	
-	
-
-	while (true)
+	for(std::size_t i{listCount};i>=1;--i)
 	{
-		std::cout<<" guess the number in list";
+		std::cout<<" guess the number in list:  ";
 		int guess {};
 		std::cin>>guess;
 		auto found {std::find(vecky.begin(),vecky.end(),guess)};
 	
-
-		if (found!=vecky.end())
+		if (found ==vecky.end())
 		{
-			vecky.erase(found); // std::vector.erase() to delete element from vector at irterator found
+			//Custom predicate function is always a function pointer in call of form prepending ampersand operator(&)
+			// prepending ampersand can be dropped of also in call as an argument, but better to show for understanding
+
+			auto closest {std::min_element(vecky.begin(),vecky.end(),&compare)};
 			
-			if (std::size(vecky)>=1)
+			if (std::abs(guess-*closest)>4) // to calculate the absolute value of difference for comparison
 			{
-				std::cout<<" Nice! "<<std::size(vecky)<<" numbers are left. ";
-				continue;
+				std::cout<<" Wrong \n";
+				return 0;
 			}
 			else
-				break;
+			{
+				std::cout<<guess<<'\n';
+				return 0;
+			}
 		}
 		else
 		{
-			auto closest {std::min_element(vecky.begin(),vecky.end(),[](int a,int b)
-										   {
-											   return a<b;
-										   })};
-
-			if ((*closest-guess)>4)
-				std::cout<<guess<<"is wrong\n";
-			break;
+			vecky.erase(found); // std::vector.erase() to delete element from vector at irterator found	
+			std::cout<<" Nice! "<<std::size(vecky)<<" numbers are left. ";
 		}
-		
-
-	}
-	
-	
-
-	
+	}	
 	return 0;
 }

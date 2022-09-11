@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="quiz12.8 lambda captureswip.cpp">
+    <ClCompile Include="quiz12.8 without lambda captures using predicate function.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
