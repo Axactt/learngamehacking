@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="quiz 12.x binarySearch algo.cpp">
+    <ClCompile Include="binary Recursive Search.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
