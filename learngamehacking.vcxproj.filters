@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="quiz12.8.3Lambda capture as custom predicate.cpp">
+    <ClCompile Include="quiz 12.x binarySearch algo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

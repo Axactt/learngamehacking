@@ -74,12 +74,12 @@ int main()
 			if (std::abs(guess-*closest)>4) // to calculate the absolute value of difference for comparison
 			{
 				std::cout<<" Wrong \n";
-				return 0;
+				break;
 			}
 			else
 			{
 				std::cout<<guess<<'\n';
-				return 0;
+				break;
 			}
 		}
 		else
