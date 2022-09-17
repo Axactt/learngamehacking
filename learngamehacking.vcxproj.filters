@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Q13.3.3b Stack emulation using classes .cpp">
+    <ClCompile Include="Cstyle cast class privMember access .cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
