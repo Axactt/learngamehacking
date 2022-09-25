@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Cstyle cast class privMember access .cpp">
+    <ClCompile Include="qUIZ13.7 deafult constructor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

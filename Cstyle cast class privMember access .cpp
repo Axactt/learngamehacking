@@ -16,7 +16,7 @@ int main()
 {
 	User user {};
 	// The compiler prevents us from grabbing the password being private access
-	// const char* mypassWord{user.passWord} // fails to compile
+   // const char* mypassWord {user.passWord}; // fails to compile
 
 	// However we can try to get around this
 
