@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Dynamic Array alocation frm Class.cpp">
+    <ClCompile Include="return by this poiner .cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
