@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="return by this poiner .cpp">
+    <ClCompile Include="Struct Offsets finding.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
