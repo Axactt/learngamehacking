@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Struct Offsets finding.cpp">
+    <ClCompile Include="bomblab OSTA2 phase_5.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
