@@ -13,24 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Point3d">
+      <UniqueIdentifier>{cdaf16be-c0f2-4957-b2a6-f5a2584ff7b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vector3d">
+      <UniqueIdentifier>{eeb6dd25-6d89-47d1-b5ba-2d056163f457}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="quiz13.15 friend function with headers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Point3d.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Point3d</Filter>
     </ClCompile>
     <ClCompile Include="Vector3d.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Vector3d</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Point3d.h">
-      <Filter>Header Files</Filter>
+      <Filter>Point3d</Filter>
     </ClInclude>
     <ClInclude Include="Vector3d.h">
-      <Filter>Header Files</Filter>
+      <Filter>Vector3d</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
