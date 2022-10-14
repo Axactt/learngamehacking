@@ -19,13 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Point3d.cpp" />
-    <ClCompile Include="quiz13.15 friend function with headers.cpp" />
-    <ClCompile Include="Vector3d.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Point3d.h" />
-    <ClInclude Include="Vector3d.h" />
+    <ClCompile Include="vTable example and Hooking.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
