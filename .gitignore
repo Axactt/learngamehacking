@@ -362,3 +362,9 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 /Source.cpp
+/civilengineer.cpp
+/civilengineer.h
+/engineer.cpp
+/engineer.h
+/Person.cpp
+/Person.h

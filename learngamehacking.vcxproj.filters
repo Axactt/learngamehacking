@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="vTable example and Hooking.cpp">
+    <ClCompile Include="Modifying temporary object _this.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
