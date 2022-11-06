@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Modifying temporary object _this.cpp">
+    <ClCompile Include="functptr alternate defnition.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
