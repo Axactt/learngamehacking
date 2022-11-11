@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="functptr alternate defnition.cpp">
+    <ClCompile Include="Timer class.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

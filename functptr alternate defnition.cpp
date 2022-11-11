@@ -1,6 +1,6 @@
 #include<iostream>
 
-# define _(a,b)  a = (decltype(a))(b);  // crazy define macro
+ # define _(a,b)  a = (decltype(a))(b);  // crazy define macro
 
 int func(int a,int b)
 {
@@ -20,6 +20,7 @@ int main()
 	std::cout<<&func<<'\n'; // directly printing  address of function
 	std::cout<<Ptralias(a,b)<<'\n'; // calling function through function pointer
 	std::cout<<func(a,b)<<'\n'; // calling function directly
+	
 
     return 0;
 }
