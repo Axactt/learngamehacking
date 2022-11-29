@@ -529,7 +529,6 @@ bool PlayerTurn(  Player& player, Deck& deck )
 			}
 		}
 			
-
 	}
 
 }
