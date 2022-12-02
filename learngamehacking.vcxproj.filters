@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp">
+    <ClCompile Include="Qz 14,2.1e Operator overloading ctor calling member func .cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
