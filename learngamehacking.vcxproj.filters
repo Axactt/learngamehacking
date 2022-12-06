@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="overloading input output operators.cpp">
+    <ClCompile Include="Unary  and ostream operator overloadin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
