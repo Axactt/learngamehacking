@@ -11,8 +11,11 @@ public:
 	//convert point into its negative equivalent
 	Points operator-()const;
 
+	Points operator+() const;
+
 	//Return true if Points is set at origin
 	bool operator!()const;
+
 	friend std::ostream& operator<<( std::ostream& out, const Points& point );
 
 	double getX()const
@@ -37,6 +40,19 @@ Points Points::operator-()const
 	return { -m_x,-m_y,-m_z };
 
 }
+
+Points Points::operator+() const
+{
+	// As we are returning the exactly same one we are operating on
+	//we are retutning a copy by value here rather than a const reference
+	//This is because users of this function will probably expect the returned object to be modifiable
+	return *this;
+
+}
+
+
+
+
 bool Points::operator!() const
 {
 	/*if (m_x == 0.0 && m_y == 0.0 && m_z == 0.0)
@@ -66,8 +82,11 @@ int main()
 		std::cout << "point is set at the origin.\n";
 	else
 		std::cout << "point is not set at the origin.\n";
+	std::cout << "point2 is " << point2 << '\n';
 	// overloading ostream opertaor << and operator -
 	std::cout << "The oppsosite end of point2 is: " << -point2 << '\n';
+
+	std::cout << "The positive -point2 is: " << +(-point2) << '\n';
 
 	return 0;
 
