@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Conditionaloperator overloading.cpp">
+    <ClCompile Include="conditional operator overloding fraction quiz.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
