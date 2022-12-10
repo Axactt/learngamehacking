@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Overloaed opeartor less than stdsort.cpp">
+    <ClCompile Include="Postfix incre decrement operator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
