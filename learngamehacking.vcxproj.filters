@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Qz14.9.1 Oveloaded subscript operator Lambda implementation.cpp">
+    <ClCompile Include="Matrix class overloaded parenthesis oprtr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
