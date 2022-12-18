@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Matrix class overloaded parenthesis oprtr.cpp">
+    <ClCompile Include="Functor by parenthesis operator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
