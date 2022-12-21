@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Copy Ctor Pass_return by value.cpp">
+    <ClCompile Include="ImplicitConversionExample.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
