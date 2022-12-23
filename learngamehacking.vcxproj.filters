@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Operator assignement delete keyword.cpp">
+    <ClCompile Include="Implicit copyctor and assignement optr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
