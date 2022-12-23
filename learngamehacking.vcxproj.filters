@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Implicit copyctor and assignement optr.cpp">
+    <ClCompile Include="ShallowCopy implicit copy Ctor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
