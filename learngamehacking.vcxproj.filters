@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ShallowCopy implicit copy Ctor.cpp">
+    <ClCompile Include="Qz14.x.2 Average Class.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
