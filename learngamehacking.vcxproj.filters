@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Qz14.x.2 Average Class.cpp">
+    <ClCompile Include="Intarray qz14.x.3 dynamic array.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
