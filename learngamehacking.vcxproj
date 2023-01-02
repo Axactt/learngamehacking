@@ -19,7 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="car-driver indirect association.cpp" />
+    <ClCompile Include="IntArray Container Class.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IntArray.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
