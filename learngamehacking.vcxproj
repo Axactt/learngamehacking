@@ -19,10 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="IntArray Container Class.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="IntArray.h" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

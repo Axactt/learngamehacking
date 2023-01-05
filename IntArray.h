@@ -12,7 +12,7 @@ private:
 public:
 	IntArray() = default;
 
-	IntArray(int length) :
+	IntArray(int length) : // dynamically aloocated array constructor
 		m_length { length }
 	{
 		assert(length >= 0);
