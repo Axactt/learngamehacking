@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="std_initializer_list assignement overload .cpp">
+    <ClCompile Include="derived class constructor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
