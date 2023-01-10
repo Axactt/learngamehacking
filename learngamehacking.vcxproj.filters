@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="derived_hidin_base_func_same_name.cpp">
+    <ClCompile Include="Mixin class example.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
