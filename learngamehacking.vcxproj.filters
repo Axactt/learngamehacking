@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Hiding member functionality drived.cpp">
+    <ClCompile Include="derived_hidin_base_func_same_name.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
