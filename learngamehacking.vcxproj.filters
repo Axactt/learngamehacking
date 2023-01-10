@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="derived class constructor.cpp">
+    <ClCompile Include="Hiding member functionality drived.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
