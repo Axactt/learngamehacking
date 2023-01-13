@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Mixin class example.cpp">
+    <ClCompile Include="quiz17.x monsterGame lookup-table.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
