@@ -3,7 +3,7 @@
 #include<string>
 #include<vector>
 #include<array>
-
+#include"PRNGClass.h" // To use PRNGClass{}.operator(min,max) as functor which can be further written as PRNGClass{}(min,max)
 class Creature
 {
 protected:
@@ -105,6 +105,7 @@ private:
 		};
 		return monsterData.at( static_cast<std::size_t>(type) );
 	}
+	
 public:
 	// getDefaultCratureType function returns element of monsterData array
 	//As each element of monsterData array is an object of type Creature
@@ -114,19 +115,23 @@ public:
 	Monster( Type type )
 		:Creature( { getDefaultCreatureType( type ) }){ }
 
+	static const Monster getRandomMonster()
+	{
+		int typeNumber { PRNGClass {}(static_cast<int>(Type::dragon), (static_cast<int>(Type::max_types) - 1)) };// use PRNGClass to generate 
+		// Temporary object of type Monster returned by list initialization using Monster (Type type) constructor
+		return { static_cast<Type>(typeNumber) };
+	}
 };
 
 int main()
 {
-	/*
-	std::cout << " Enter your name: ";
-	std::string name;
-	std::cin >> name;
-	std::cout << " Welcome,"<<name<<'\n';
-	Player player { name };
-	std::cout << " You have " << player.getHealth() << " health and are carrying " << player.getGold() << " gold.\n";  */
-
+	
 	Monster m { Monster::Type::orc };
 	std::cout << " A " << m.getName() << " (" << m.getSymbol() << ") was created.\n";
+	for (int i { 0 }; i < 10; ++i)
+	{
+		Monster m { Monster::getRandomMonster() };
+		std::cout << "A " << m.getName() << " (" << m.getSymbol() << ") was created.\n";
+	}
 	return 0;
 }
