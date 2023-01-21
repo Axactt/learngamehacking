@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="__vptr and virtul table.cpp">
+    <ClCompile Include="interface_Clss_Usage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

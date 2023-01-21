@@ -22,7 +22,7 @@
     <ClInclude Include="PRNGClass.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="__vptr and virtul table.cpp" />
+    <ClCompile Include="interface_Clss_Usage.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
