@@ -33,6 +33,8 @@ int main()
 	//Finally note that dPtr->__vptr points to D1 virtual table
 	//Consequently even though dPtr is of type Base,
 	//it still has access to D1's virtual table (through __vptr)
+	// D1 virtual table contains most-derived version of virtual functions
+	//Which class object D1 can access when class object D1 is constructed
 	dPtr->function1(); 
 	return 0; 
 }
