@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="interface_Clss_Usage.cpp">
+    <ClCompile Include="Virtual Base Class .cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
