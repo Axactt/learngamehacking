@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Virtual Base Class .cpp">
+    <ClCompile Include="Dynamic_cast_refernces.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
