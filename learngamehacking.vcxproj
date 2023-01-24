@@ -22,7 +22,7 @@
     <ClInclude Include="PRNGClass.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Trinagle Circle quiz using Virtual function.cpp" />
+    <ClCompile Include="Qz18.x DynamicCast Largest member.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
