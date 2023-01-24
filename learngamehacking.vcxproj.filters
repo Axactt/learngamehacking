@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Dynamic_cast_refernces.cpp">
+    <ClCompile Include="Inherited class Print ostream operator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
