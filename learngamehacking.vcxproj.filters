@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="StaticArray Non-type parameters.cpp">
+    <ClCompile Include="Non-type template parameter function pointer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
