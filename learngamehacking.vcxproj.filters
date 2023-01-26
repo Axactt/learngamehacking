@@ -18,15 +18,9 @@
     <ClInclude Include="PRNGClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ArrayTemplate.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ArrayTemplateExample.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ArrayTemplate.cpp">
+    <ClCompile Include="StaticArray Non-type parameters.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
