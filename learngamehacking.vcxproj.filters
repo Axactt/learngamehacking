@@ -18,9 +18,15 @@
     <ClInclude Include="PRNGClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ArrayTemplate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Qz18.x DynamicCast Largest member.cpp">
+    <ClCompile Include="ArrayTemplateExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayTemplate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
