@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stringStorage Class Template specialization.cpp">
+    <ClCompile Include="Template Specialized Bool class.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
