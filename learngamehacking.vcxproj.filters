@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Template Specialized Bool class.cpp">
+    <ClCompile Include="Global Class Pointers and references as expression parameters .cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
