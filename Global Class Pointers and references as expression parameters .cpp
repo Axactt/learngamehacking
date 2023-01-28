@@ -27,5 +27,22 @@ int main()
 	
 	Myclass<&globalData>myClass; 
 	myClass.printValue();
+	// Class object defined in locl scope or instantiated on heap/stack cant be used as expression parametrs
+	MyData localData {};
+	localData.value = 6;
+	/*======================================================================================*/
+	//Local object variable  localData can't be used as compile-time expression parametrs
+	///  Myclass<&localData>myClass1;   <----------------------
+	/*======================================================================================*/
+	// On the other hand static variables even though defined in local scope have 
+	//Have their address known at compile-time as compile-time constant
+	// so pointer and refernces to static variables of class objects have copile-time known address
+	// so pointers and refernces to static variable of class object used as expression parameters.
+
+	static MyData staticData {};
+	staticData.value = 7;
+	Myclass<&staticData>myClass2;
+	myClass2.printValue();
+
 	return 0;
 }
