@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Static class object variable as expression parameters.cpp">
+    <ClCompile Include="Partial template specialization Classes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
