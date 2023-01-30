@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="PartialTemplate specialization Member function.cpp">
+    <ClCompile Include="Partial Pointer specialization .cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
