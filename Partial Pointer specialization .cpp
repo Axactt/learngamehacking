@@ -80,6 +80,7 @@ template<>
 	 myintptr.print();
 
 	 //Dynamically allocate a temporary string
+	 //so I could delete itand then print out the value from Storage to prove //that Storage made a deep copy, not just a shallow copy.
 	 char* name { new char[40]{"Alex"} };
 
 	 //Store the name
