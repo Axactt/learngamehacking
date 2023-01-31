@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Partial Pointer specialization .cpp">
+    <ClCompile Include="quiz19.x template trailing return type.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
