@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="quiz19.x template trailing return type.cpp">
+    <ClCompile Include="Template class quiz const obj.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
