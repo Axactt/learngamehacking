@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Template class quiz const obj.cpp">
+    <ClCompile Include="Partial Template specialization Inheritance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
