@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SEH exception flow try except.cpp">
+    <ClCompile Include="VectoredExceptionhandlerExploit.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
