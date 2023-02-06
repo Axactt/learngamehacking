@@ -22,7 +22,7 @@
     <ClInclude Include="PRNGClass.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="std exception class example.cpp" />
+    <ClCompile Include="Exception calsses from stl using inheritance for derived specific exception.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
