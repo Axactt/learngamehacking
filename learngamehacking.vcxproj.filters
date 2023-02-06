@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Exception calsses from stl using inheritance for derived specific exception.cpp">
+    <ClCompile Include="Derived exception Class stdException.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
