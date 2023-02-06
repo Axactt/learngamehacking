@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="VectoredExceptionhandlerExploit.cpp">
+    <ClCompile Include="Exception Classes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
