@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="std runtime error derived exception.cpp">
+    <ClCompile Include="rethrow exception slicing.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
