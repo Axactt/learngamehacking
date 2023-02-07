@@ -23,6 +23,7 @@ int main()
 	try
 	{
 		try{
+			
 			throw Derived {};
 
 		   }
@@ -31,7 +32,10 @@ int main()
 			std::cout << "Caught Base b, whcih is actually a ";
 			b.print();
 			std::cout << "\n";
-			throw b; // the derived gets sliced here
+			//throw b; // the derived gets sliced here==shouldn't be done
+			//but if we remove object identifier(b) and just use "throw"
+			throw; //note: we're now rethrowind an object here
+/*When rethrowing the same exception, use the throw keyword by itself*/
 		}
 	}
 	catch (Base& b)
