@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="noExcept function specifics.cpp">
+    <ClCompile Include="Exception quiz std_runtime_error.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
