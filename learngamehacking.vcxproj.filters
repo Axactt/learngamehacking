@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Function try block.cpp">
+    <ClCompile Include="noExcept function specifics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
