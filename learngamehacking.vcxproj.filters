@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Auto_ptr Move semantics .cpp">
+    <ClCompile Include="autoptr copy_ctor_assignement deep_copy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

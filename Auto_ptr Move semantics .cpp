@@ -82,7 +82,7 @@ int main()
 
 	res2 = res1; // res2 assumes ownership, res1 is set to null
 
-	std::cout << "Ownership transfeered\n";
+	std::cout << "Ownership transfered\n";
 	
 	std::cout << "res1 is " << (res1.isNull() ? "null\n" : "not null\n");
 	std::cout << "res2 is " << (res2.isNull() ? "null\n" : "not null\n");
