@@ -16,7 +16,7 @@ public:
 	{
 		//allocate a new memory from os worth T and 
 		// assign its address to m_ptr
-		// deep copy the contents of a.m_ptr to this->m_ptr
+		// deep copy the contents of a.m_ptr to this->m_ptr by derefrerencing pointers
 		this->m_ptr = new T; 
 		*m_ptr = *a.m_ptr;
 
