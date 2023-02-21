@@ -103,6 +103,5 @@ int main()
 {
 	Auto_ptr5<Resource> mainres;
 	mainres = generateResource(); // this assignment will invoke the copy assignment
-
 	return 0;
 }
