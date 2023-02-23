@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DynArray MoveSemantics Timer.cpp">
+    <ClCompile Include="Cutom swap function for Move.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
