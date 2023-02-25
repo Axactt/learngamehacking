@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Cutom swap function for Move.cpp">
+    <ClCompile Include="stdMove vector example.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
