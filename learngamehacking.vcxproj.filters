@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdMove vector example.cpp">
+    <ClCompile Include="std_move strong_exception_guarantee problem .cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
