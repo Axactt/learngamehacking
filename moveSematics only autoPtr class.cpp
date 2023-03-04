@@ -74,16 +74,29 @@ public:
 	{
 		return m_ptr;
 	}
+	/*
 	bool isNull() const
 	{
 		return m_ptr == nullptr;
+	}  */
+
+	//actual smart-pointer class uses a overloaded type-cast to bool for checking null-ptr 
+	//or whether actually owns the resource before using operator*() and opeartor->()
+	operator bool() const
+	{
+		return m_ptr != nullptr;
 	}
+	
+
 };
 
 class Resource
 {
+private:
+	int m_x{ 0 };
 public:
-	Resource()
+	Resource( int x = 0 )
+		:m_x{ x }
 	{
 		std::cout << "Resource acquired\n";
 	}
@@ -91,11 +104,16 @@ public:
 	{
 		std::cout << "Resource destroyed\n";
 	}
+	friend std::ostream& operator<<( std::ostream& out, const Resource& res )
+	{
+		out << "I am a alive reso          urce";
+		return out;
+	}
 };
 
 Auto_ptr5<Resource> generateResource()
 {
-	Auto_ptr5<Resource> res { new Resource };
+	Auto_ptr5<Resource> res{ new Resource{5126} };
 	return res; // this return value will invoke the copy constructor
 }
 
@@ -103,5 +121,7 @@ int main()
 {
 	Auto_ptr5<Resource> mainres;
 	mainres = generateResource(); // this assignment will invoke the copy assignment
+	if (mainres)
+		std::cout << *mainres<<'\n';
 	return 0;
-}
+}    

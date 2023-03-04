@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="std_move strong_exception_guarantee problem .cpp">
+    <ClCompile Include="moveSematics only autoPtr class.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
