@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="moveSematics only autoPtr class.cpp">
+    <ClCompile Include="std_make_unique function for object .cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
