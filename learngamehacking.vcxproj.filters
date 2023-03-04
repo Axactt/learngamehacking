@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="std_unique_ptr passed by value.cpp">
+    <ClCompile Include="ownership_agonistic_func_call.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
