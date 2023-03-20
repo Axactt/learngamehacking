@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="weak_ptr use for cyclic_redundancy.cpp">
+    <ClCompile Include="weak_ptr check for expired.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
