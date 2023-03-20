@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ownership_agonistic_func_call.cpp">
+    <ClCompile Include="weak_ptr use for cyclic_redundancy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
