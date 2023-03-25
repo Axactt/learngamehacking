@@ -1,0 +1,74 @@
+#include<vector>
+#include<iostream>
+#include<deque>
+#include<map>
+#include<list>
+#include<set>
+#include<string>
+
+int main()
+{
+	std::vector<int> vect;
+	for (int count = 0; count < 6; ++count)
+		vect.push_back( count );
+
+	std::vector<int>::const_iterator itv; // declare a read only itearator
+	itv = vect.cbegin(); // assign it to the start of the vector
+	while (itv != vect.cend()) // while it hasn't reach the end
+	{
+		std::cout << *itv << ' '; // print the value of the element it points to
+		++itv; // and iterate to the next element
+	}
+
+	std::cout << '\n';
+
+	/*==========list iteration==========*/
+	std::list<int> li;
+	for (int count = 0; count < 6; ++count)
+		li.push_back( count );
+	std::list<int>::const_iterator itl; // declare an iterator
+	itl = li.cbegin(); // assign it to the start of the list
+	while (itl != li.cend()) // while it hasn't reach the end
+	{
+		std::cout << *itl << ' '; // print the value of element it ponits to
+		++itl; // and iterate to next element
+	}
+	std::cout << '\n';
+
+	/*==========set iteration==========*/
+	std::set<int>myset;
+	myset.insert( 7 );
+	myset.insert( 2 );
+	myset.insert( -6 );
+	myset.insert( 8 );
+	myset.insert( 1 );
+	myset.insert( -4 );
+
+	std::set<int>::const_iterator itset; // declare an iterator
+	itset = myset.cbegin(); // assign it to the start of the set
+	while (itset != myset.cend())
+	{
+		std::cout << *itset << ' ';// print the value of the element it points to
+		++itset; // and iterate to the next element
+	}
+	std::cout << '\n';
+
+	/*==========map iteration==========*/
+	std::map<int, std::string>mymap;
+	mymap.insert( std::make_pair( 4, "apple" ) );
+	mymap.insert( std::make_pair( 2, "orange" ) );
+	mymap.insert( std::make_pair( 1, "banana" ) );
+	mymap.insert( std::make_pair( 3, "grapes" ) );
+	mymap.insert( std::make_pair( 6, "mango" ) );
+	mymap.insert( std::make_pair( 5, "peach" ) );
+	// declare a const iterator and assign to satrt of map 
+	std::map<int,std::string>::const_iterator itmap  { mymap.cbegin() };
+	while (itmap != mymap.cend()) // while it has not reached the end
+	{
+		std::cout << itmap->first << '=' << itmap->second << ' ';// print the value of element it point
+		++itmap; // and iterate the next element
+
+	}
+	std::cout << '\n';
+
+};

@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="weak_ptr check for expired.cpp">
+    <ClCompile Include="Iteartor_vector_map_example">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
