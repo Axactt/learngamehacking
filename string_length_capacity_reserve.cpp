@@ -48,7 +48,7 @@ int main()
 	std::cout << (string2.empty() ? "true" : "false");
 
 	//max_size(),length() and capacity()
-	std::string s{ "MyString" };
+	std::string s{ "MyString" }; 
 	std::cout <<'\n'<< s.max_size()<<'\n';
 	std::cout << "Length: " << s.length() << '\n';
 	std::cout << "Capacity: " << s.capacity() << '\n';
@@ -64,7 +64,7 @@ int main()
 	// size_type string::reserve() and string::reserve(size_type unSize)
 	std::srand( std::time( nullptr ) ); // sed random number generator
 	std::string s3{}; // length 0
-	s.reserve( 64 ); // reserve 64 characters
+	s3.reserve( 64 ); // reserve 64 characters
 
 	//fill string up with random lower case characters
 	for (int count{ 0 }; count < 64; ++count)
