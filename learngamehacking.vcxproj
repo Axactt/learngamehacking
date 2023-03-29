@@ -22,7 +22,7 @@
     <ClInclude Include="PRNGClass.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="string_length_capacity_reserve.cpp" />
+    <ClCompile Include="string_access and to char conversion.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

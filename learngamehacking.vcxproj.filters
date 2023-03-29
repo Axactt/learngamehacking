@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="string_length_capacity_reserve.cpp">
+    <ClCompile Include="string_access and to char conversion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
