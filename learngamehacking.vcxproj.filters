@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="String assign opeartor assin and swap.cpp">
+    <ClCompile Include="strig append and push_back.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
