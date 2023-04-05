@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="extraction operator manipulators.cpp">
+    <ClCompile Include="stringstream_object_function.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
