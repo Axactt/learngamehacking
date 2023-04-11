@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Numeric validation.cpp">
+    <ClCompile Include="Numeric_validation_as_string.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
