@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Numeric_validation_as_string.cpp">
+    <ClCompile Include="file make ofstream output.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
