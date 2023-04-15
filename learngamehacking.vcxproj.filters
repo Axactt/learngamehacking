@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="file input extraction operator.cpp">
+    <ClCompile Include="filestream appending .cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

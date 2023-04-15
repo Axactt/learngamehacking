@@ -18,9 +18,10 @@ int main()
 	}
 
 	/*
-	//While there's still stuff left to read
+	
 	//? ifstream return 0 if we've reached the End of file 
 	//!use this to determine how much to read
+	//While there's still stuff left to read
 	while (inf)
 	{
 		//!read stuff from the file into a string and print it
