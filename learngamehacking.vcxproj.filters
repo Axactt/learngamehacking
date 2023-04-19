@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="filestream appending .cpp">
+    <ClCompile Include="random file access pointer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
