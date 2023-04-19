@@ -30,6 +30,18 @@ int main()
 	std::getline( inf, strData );
 	std::cout << strData << '\n';
 
+	inf.seekg( 0, std::ios::end ); // move to end of file
+
+	//! return absolute positon of file pointer
+	std::cout << inf.tellg();
+
+	//!to get current postion of file pointer using fstream class 
+	//! While changing between simultaneous read and write operation
+	//? iofile.seekg(0,std::ios::cur) may be used but may be optimized aawy by compiler
+
+	std::fstream iofile; // and object of type fstream
+
+	iofile.seekg( iofile.tellg(), std::ios::beg ); // seek to current file position
 	return 0;
 
 }
