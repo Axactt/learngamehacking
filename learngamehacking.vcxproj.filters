@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="tNtQueryInformationProcess_usage.cpp">
+    <ClCompile Include="__PEB_FileLess_ldr_data_table_entry.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

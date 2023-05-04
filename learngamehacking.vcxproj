@@ -22,7 +22,7 @@
     <ClInclude Include="PRNGClass.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="tNtQueryInformationProcess_usage.cpp" />
+    <ClCompile Include="__PEB_FileLess_ldr_data_table_entry.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
