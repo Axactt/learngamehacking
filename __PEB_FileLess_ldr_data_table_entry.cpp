@@ -5,6 +5,15 @@
 #include<iostream>
 #include<string>
 
+//! Non coventional GetProcAddress
+
+
+
+
+
+
+
+
 // Read Peb and module base internally without using windows api.
 
 //! Read the value of TIB or _TEB Linear address from FS/GS segment base offset
@@ -79,14 +88,24 @@ LDR_DATA_TABLE_ENTRY* GetLdrDatTableEntryInternal( const wchar_t* modName )
 	return modLdtEntry;
 }
 
+intptr_t FindModuleHandle(std::wstring moduleName)
+{ 
+	//!To convert wstring to  const wchar_t* use member function .c_str() 
+	return {(intptr_t) (GetLdrDatTableEntryInternal( moduleName.c_str()))->DllBase };
+
+}
+
 int main()
 {
-	std::wcout << " Enter the name of module to get LDR_DATA_TABLE_ENTRY structure.\n";
+	std::wcout << " Enter the full path name of module to get LDR_DATA_TABLE_ENTRY structure.\n";
 	//? Note full actual path of dll has to be entered here as 
 	//! wininternl.h has only defined FullDllName member for LDR_DATA_TABLE_ENTRY structure
 	std::wstring modName;
 	std::wcin >> modName;
 	//!To convert wstring to  const wchar_t* use member function .c_str() 
 	std::cout << " The base address of module is: " << GetLdrDatTableEntryInternal( modName.c_str() )->DllBase << '\n';
+	//Function version of GetModuleHandle()
+	std::cout << " The base address of module is: " << std::hex<<FindModuleHandle(modName) << '\n';
+
 	return 0;
 }
