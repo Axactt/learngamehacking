@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PRNGClass.h" />
+    <ClInclude Include="ReNtdll.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="__PEB_FileLess_ldr_data_table_entry.cpp" />

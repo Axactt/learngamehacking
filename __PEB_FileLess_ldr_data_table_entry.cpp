@@ -1,6 +1,7 @@
 #include<Windows.h>
 #include<intrin.h>
-#include<winternl.h>//!//! for undocumented structures like PROCESSINFOCLASS or TEB or PEB ::A_MUST_INCLUDE
+#include"ReNtdll.h" //! imported ntdl.dll from x64dbg header to inlude all undocumented structures
+//x#include<winternl.h>//!//! for undocumented structures like PROCESSINFOCLASS or TEB or PEB ::A_MUST_INCLUDE
 #include<ntstatus.h>
 #include<iostream>
 #include<string>
@@ -78,7 +79,7 @@ LDR_DATA_TABLE_ENTRY* GetLdrDatTableEntryInternal( const wchar_t* modName )
 		//! BaseDllName member is nor defined so not showing up
 		if (ldtEntry->FullDllName.Buffer)
 		{
-			if (_wcsicmp( modName, ldtEntry->FullDllName.Buffer ) == 0)
+			if (_wcsicmp( modName, ldtEntry->BaseDllName.Buffer ) == 0)
 			{
 				modLdtEntry = ldtEntry;
 				break;

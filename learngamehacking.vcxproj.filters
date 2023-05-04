@@ -18,6 +18,9 @@
     <ClInclude Include="PRNGClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ReNtdll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="__PEB_FileLess_ldr_data_table_entry.cpp">
