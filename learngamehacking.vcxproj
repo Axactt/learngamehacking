@@ -23,7 +23,10 @@
     <ClInclude Include="ReNtdll.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="__PEB_FileLess_ldr_data_table_entry.cpp" />
+    <MASM Include="asmFunc.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="asmScathPad.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -61,6 +64,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
   </ImportGroup>
   <ImportGroup Label="Shared">
   </ImportGroup>
@@ -178,5 +182,6 @@
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
   </ImportGroup>
 </Project>

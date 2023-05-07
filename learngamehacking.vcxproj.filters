@@ -23,7 +23,12 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="__PEB_FileLess_ldr_data_table_entry.cpp">
+    <MASM Include="asmFunc.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="asmScathPad.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
