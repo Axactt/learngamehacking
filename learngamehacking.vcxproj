@@ -23,10 +23,7 @@
     <ClInclude Include="ReNtdll.h" />
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="asmFunc.asm" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="asmScathPad.cpp" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

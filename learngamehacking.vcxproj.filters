@@ -23,12 +23,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="asmFunc.asm">
-      <Filter>Source Files</Filter>
-    </MASM>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="asmScathPad.cpp">
+    <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.2.32616.157
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33801.447
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "learngamehacking", "learngamehacking.vcxproj", "{5187F1D4-E8E8-40FC-A500-E0EC53E16AE5}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ScratchPad_Small_App", "..\ScratchPad_Small_App\ScratchPad_Small_App.vcxproj", "{A310C7C7-8085-4887-AE73-C894EE8C5A7A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Simple_testing_program", "..\Simple_Testing_Program\Simple_testing_program\Simple_testing_program.vcxproj", "{70368759-25FE-4D0A-B18B-8827C92B66D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,14 @@ Global
 		{A310C7C7-8085-4887-AE73-C894EE8C5A7A}.Release|x64.Build.0 = Release|x64
 		{A310C7C7-8085-4887-AE73-C894EE8C5A7A}.Release|x86.ActiveCfg = Release|Win32
 		{A310C7C7-8085-4887-AE73-C894EE8C5A7A}.Release|x86.Build.0 = Release|Win32
+		{70368759-25FE-4D0A-B18B-8827C92B66D6}.Debug|x64.ActiveCfg = Debug|x64
+		{70368759-25FE-4D0A-B18B-8827C92B66D6}.Debug|x64.Build.0 = Debug|x64
+		{70368759-25FE-4D0A-B18B-8827C92B66D6}.Debug|x86.ActiveCfg = Debug|Win32
+		{70368759-25FE-4D0A-B18B-8827C92B66D6}.Debug|x86.Build.0 = Debug|Win32
+		{70368759-25FE-4D0A-B18B-8827C92B66D6}.Release|x64.ActiveCfg = Release|x64
+		{70368759-25FE-4D0A-B18B-8827C92B66D6}.Release|x64.Build.0 = Release|x64
+		{70368759-25FE-4D0A-B18B-8827C92B66D6}.Release|x86.ActiveCfg = Release|Win32
+		{70368759-25FE-4D0A-B18B-8827C92B66D6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
